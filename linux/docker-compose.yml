@@ -1,0 +1,10 @@
+version: "3"
+services:
+  agent:
+    build:
+      context: .
+    environment:
+      VSTS_ACCOUNT: YOUR_ACCOUNT_HERE
+      VSTS_AGENT: linux_agent
+      VSTS_TOKEN: YOUR_TOKEN_HERE
+    restart: always
